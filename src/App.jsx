@@ -4,6 +4,7 @@ import Home from "./Pages/Home";
 import Essentials from "./Pages/Essentials";
 import Arrivals from "./Pages/Arrivals";
 import Sellers from "./Pages/Sellers";
+import Trial from "./Pages/Trial";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Essentials />
       <Arrivals />
       <Sellers />
+      <Trial />
     </>
   );
 };

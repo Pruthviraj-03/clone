@@ -15,6 +15,7 @@
   --light-white: #f6f7fb;
 }
 
+/* components start */
 .para {
   font-size: 15px;
   font-weight: 500;
@@ -26,15 +27,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 35px;
-  width: 160px;
+  height: 45px;
+  width: 200px;
   border: 1px solid black;
   background-color: var(--main-color);
   cursor: pointer;
 }
 
 .button-text {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   font-family: "Helvetica", sans-serif;
   color: var(--dark-white);
@@ -53,11 +54,11 @@
   display: flex;
   flex-direction: row;
   height: auto;
-  width: 80%;
+  width: 90%;
 }
 
 .product-card {
-  height: 630px;
+  height: 720px;
   width: 25%;
   cursor: pointer;
 }
@@ -108,3 +109,207 @@
   width: 23px;
   margin-right: 20px;
 }
+/* components end */
+
+/* header start */
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: #b5c0c7;
+}
+
+.header-one {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header-one input {
+  margin-left: 40px;
+  height: 30px;
+  width: 35%;
+  padding-left: 15px;
+  background-color: transparent;
+}
+
+.header-one input::placeholder {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Helvetica", sans-serif;
+  color: var(--main-color);
+}
+
+.header-two {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-list {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  gap: 30px;
+  margin-right: 40px;
+}
+
+.header-nav-list li {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Helvetica", sans-serif;
+  color: var(--main-color);
+  list-style-type: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.header-nav-list li:hover {
+  color: var(--dark-grey);
+}
+
+.center-span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Amatic SC", cursive;
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+/* header end */
+
+/* home start */
+.home {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.home-one,
+.home-two {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.home-one img,
+.home-two img {
+  width: 100%;
+  height: 100%;
+}
+
+.home-box {
+  position: absolute;
+  top: 70%;
+  left: 38%;
+  border: 3px solid var(--dark-white);
+  height: 60px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.home-box span {
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+  font-family: "Helvetica", sans-serif;
+  color: var(--dark-white);
+  text-transform: uppercase;
+}
+
+.home-navlist {
+  position: absolute;
+  left: 50%;
+  top: 4%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.home-navlist li {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Helvetica", sans-serif;
+  color: var(--dark-white);
+  list-style-type: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.home-navlist li:hover {
+  font-weight: 600;
+  border-bottom: 1px solid var(--dark-white);
+}
+/* home end */
+
+/* essentials start */
+.essentials {
+  height: auto;
+  width: 100%;
+  background-color: var(--dark-white);
+  margin: 100px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.essentials-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.essentials-title span {
+  font-size: 60px;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+  color: var(--main-color);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.essentials-line {
+  border-bottom: 3px solid var(--main-color);
+  width: 50%;
+  margin-top: 5px;
+}
+
+.essentials-para {
+  margin-top: 50px;
+  width: 65%;
+  height: auto;
+}
+
+.essentials-cards {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  gap: 20px;
+}
+
+.essentials-button {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+/* essentials end */

@@ -1,14 +1,16 @@
 import React from "react";
-import Para from "./Components/Para";
-import Button from "./Components/Button";
-import Products from "./Components/Products";
+import Header from "./Components/Header";
+import Home from "./Pages/Home";
+import Essentials from "./Pages/Essentials";
+import Arrivals from "./Pages/Arrivals";
 
 const App = () => {
   return (
     <>
-      <Para />
-      <Button />
-      <Products />
+      <Header />
+      <Home />
+      <Essentials />
+      <Arrivals />
     </>
   );
 };

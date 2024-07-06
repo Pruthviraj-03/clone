@@ -313,3 +313,50 @@
   margin-top: 60px;
 }
 /* essentials end */
+
+/* arrivals start */
+.arrivals {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+  background-color: var(--dark-white);
+}
+
+.arrivals-img {
+  width: 100%;
+  height: 1100px;
+  overflow: hidden;
+}
+
+.arrivals-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.arrivals-title {
+  position: absolute;
+  top: 36%;
+  left: 30%;
+  font-size: 95px;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+  color: var(--dark-white);
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+
+.arrivals-para {
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  width: 55%;
+}
+
+.arrivals-button {
+  position: absolute;
+  top: 61.3%;
+  left: 46%;
+}
+/* arrivals end */

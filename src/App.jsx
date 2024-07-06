@@ -5,6 +5,7 @@ import Essentials from "./Pages/Essentials";
 import Arrivals from "./Pages/Arrivals";
 import Sellers from "./Pages/Sellers";
 import Trial from "./Pages/Trial";
+import OrderCount from "./Pages/OrderCount";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Arrivals />
       <Sellers />
       <Trial />
+      <OrderCount />
     </>
   );
 };

@@ -11,10 +11,10 @@ const Arrivals = () => {
       </div>
       <span className="arrivals-title">new arrivals</span>
       <div className="arrivals-para">
-        <Para />
+        <Para color="#ffffff" />
       </div>
       <div className="arrivals-button">
-        <Button />
+        <Button color="#2e3137" backgroundColor="#ffffff" />
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import Arrivals from "./Pages/Arrivals";
 import Sellers from "./Pages/Sellers";
 import Trial from "./Pages/Trial";
 import OrderCount from "./Pages/OrderCount";
+import Offers from "./Pages/Offers";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Sellers />
       <Trial />
       <OrderCount />
+      <Offers />
     </>
   );
 };

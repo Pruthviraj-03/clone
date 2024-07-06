@@ -143,6 +143,10 @@
   color: var(--main-color);
 }
 
+.header-one input:focus {
+  outline: none;
+}
+
 .header-two {
   width: 50%;
   height: 100%;
@@ -459,3 +463,73 @@
   width: 70%;
 }
 /* orderCount end */
+
+/* offers start */
+.offers {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  margin: 100px 0;
+  background-color: var(--dark-white);
+}
+
+.offers-title,
+.offers-para {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.offers-title1,
+.offers-title2 {
+  font-size: 75px;
+  font-weight: 600;
+  font-family: "Roboto Slab", serif;
+  color: var(--main-color);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.offers-para1,
+.offers-para2 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Helvetica", sans-serif;
+  color: var(--main-color);
+}
+
+.subscribe-now {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.subscibe-container {
+  display: flex;
+  flex-direction: row;
+  gap: 7.5px;
+}
+
+.subscibe-container input {
+  height: 45px;
+  width: 500px;
+  padding-left: 15px;
+  background-color: transparent;
+}
+
+.subscibe-container input::placeholder {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Helvetica", sans-serif;
+  color: var(--dark-grey);
+}
+
+.subscibe-container input:focus {
+  outline: none;
+}
+/* offers end */

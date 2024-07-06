@@ -7,6 +7,7 @@ import Sellers from "./Pages/Sellers";
 import Trial from "./Pages/Trial";
 import OrderCount from "./Pages/OrderCount";
 import Offers from "./Pages/Offers";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Trial />
       <OrderCount />
       <Offers />
+      <Footer />
     </>
   );
 };

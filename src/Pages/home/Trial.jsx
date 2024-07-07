@@ -1,7 +1,7 @@
 import React from "react";
-import trial from "../Images/trialroom-Photoroom.png";
-import Para from "../Components/Para";
-import Button from "../Components/Button";
+import trial from "../../Images/trialroom-Photoroom.png";
+import Para from "../../Components/Para";
+import Button from "../../Components/Button";
 
 const Trial = () => {
   return (

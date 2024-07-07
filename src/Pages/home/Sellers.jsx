@@ -1,7 +1,7 @@
 import React from "react";
-import Para from "../Components/Para";
-import Products from "../Components/Products";
-import Button from "../Components/Button";
+import Para from "../../Components/Para";
+import Products from "../../Components/Products";
+import Button from "../../Components/Button";
 
 const Sellers = () => {
   return (

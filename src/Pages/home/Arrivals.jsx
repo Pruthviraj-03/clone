@@ -1,7 +1,7 @@
 import React from "react";
-import arrivals from "../Images/arrivals-Photoroom.png";
-import Para from "../Components/Para";
-import Button from "../Components/Button";
+import arrivals from "../../Images/arrivals-Photoroom.png";
+import Para from "../../Components/Para";
+import Button from "../../Components/Button";
 
 const Arrivals = () => {
   return (

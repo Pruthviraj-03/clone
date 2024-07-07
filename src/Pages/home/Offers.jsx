@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Components/Button";
+import Button from "../../Components/Button";
 
 const Offers = () => {
   return (
@@ -19,7 +19,9 @@ const Offers = () => {
           <input type="text" placeholder="Enter Your Email Address"></input>
           <Button text="subscribe now" textTransform="capitalize" />
         </div>
-        <span>We respect your privacy. Unsubscribe anytime.</span>
+        <span className="privacy">
+          We respect your privacy. Unsubscribe anytime.
+        </span>
       </div>
     </div>
   );

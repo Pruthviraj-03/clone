@@ -1,6 +1,6 @@
 import React from "react";
-import order from "../Images/orderCount-Photoroom.png";
-import Para from "../Components/Para";
+import order from "../../Images/orderCount-Photoroom.png";
+import Para from "../../Components/Para";
 
 const OrderCount = () => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
-import Home1 from "../Images/Home1.png";
-import Home2 from "../Images/Home2.png";
+import Home1 from "../../Images/Home1.png";
+import Home2 from "../../Images/Home2.png";
 
-const Home = () => {
+const SubMenu = () => {
   return (
     <div className="home">
       <div className="home-one">
@@ -28,4 +28,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default SubMenu;

@@ -15,15 +15,21 @@ import {
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
 
-  const closeDrawer = (event) => {
-    if (isDrawerOpen && !event.target.closest(".mobile-menu")) {
-      setIsDrawerOpen(false);
+  const closeDrawer = (e) => {
+    if (isDrawerOpen) {
+      if (
+        !e.target.closest(".mobile-menu") &&
+        (!isTablet || !e.target.closest(".tablet-menu"))
+      ) {
+        setIsDrawerOpen(false);
+      }
     }
   };
 
@@ -42,9 +48,26 @@ const Header = () => {
     window.addEventListener("resize", checkScreenSize);
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      const isTablet = window.matchMedia(
+        "(min-width: 768px) and (max-width: 991.98px)"
+      ).matches;
+      setIsTablet(isTablet);
+    };
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  const handleRefreshPage = () => {
+    window.location.reload();
+  };
+
   return (
     <>
-      {!isMobile && (
+      {!isMobile && !isTablet && (
         <div className="header">
           <div className="header-one">
             <input type="text" placeholder="SEARCH"></input>
@@ -64,7 +87,9 @@ const Header = () => {
         <>
           <div class="mobile-menu">
             <div class="menu-header">
-              <span class="menu-title-text">house of origin</span>
+              <span class="menu-title-text" onClick={handleRefreshPage}>
+                house of origin
+              </span>
               <FontAwesomeIcon
                 className="drawer"
                 icon={faBars}
@@ -115,6 +140,71 @@ const Header = () => {
                 sale
               </li>
             </ul>
+          </div>
+        </>
+      )}
+
+      {isTablet && (
+        <>
+          <div class="tablet-menu">
+            <div className="tablet-menu-compo">
+              <div class="tablet-menu-header">
+                <FontAwesomeIcon
+                  className="drawer"
+                  icon={faBars}
+                  onClick={toggleDrawer}
+                />
+                <span
+                  class="tablet-menu-title-text"
+                  onClick={handleRefreshPage}
+                >
+                  house of origin
+                </span>
+              </div>
+
+              <div class="tablet-search-bar">
+                <FontAwesomeIcon
+                  className="tablet-search-icon"
+                  icon={faSearch}
+                />
+                <input
+                  class="tablet-search-input"
+                  placeholder="SEARCH"
+                  type="text"
+                />
+              </div>
+
+              <ul className="tablet-nav-list">
+                <li>login</li>
+                <li>help</li>
+                <li>shopping bag (0)</li>
+              </ul>
+            </div>
+
+            {isDrawerOpen && (
+              <div className="drawer-list">
+                <li onClick={toggleDrawer}>
+                  <FontAwesomeIcon icon={faGift} />
+                  new
+                </li>
+                <li onClick={toggleDrawer}>
+                  <FontAwesomeIcon icon={faFemale} />
+                  women
+                </li>
+                <li onClick={toggleDrawer}>
+                  <FontAwesomeIcon icon={faMale} />
+                  men
+                </li>
+                <li onClick={toggleDrawer}>
+                  <FontAwesomeIcon icon={faHome} />
+                  home
+                </li>
+                <li onClick={toggleDrawer}>
+                  <FontAwesomeIcon icon={faBoxOpen} />
+                  sale
+                </li>
+              </div>
+            )}
           </div>
         </>
       )}

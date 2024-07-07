@@ -60,7 +60,7 @@ const Footer = () => {
           The content of this site is copyright-protected and is the property of
           House of Origin.
         </span>
-        <h3>house of orgin</h3>
+        <h3>house of origin</h3>
       </div>
     </div>
   );

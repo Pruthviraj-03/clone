@@ -13,7 +13,7 @@ const Header = () => {
           <li>shopping bag (0)</li>
         </ul>
       </div>
-      <span className="center-span">house of orgin</span>
+      <span className="center-span">house of origin</span>
     </div>
   );
 };

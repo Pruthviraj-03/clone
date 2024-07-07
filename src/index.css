@@ -1057,7 +1057,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 22.5px 17.5px 17.5px 17.5px;
   position: fixed;
   top: 0;
   opacity: 1;
@@ -1070,7 +1070,7 @@
   height: auto;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   gap: 30px;
 }
 
@@ -1079,11 +1079,11 @@
   align-items: center;
   flex-direction: row;
   height: auto;
-  gap: 10px;
+  gap: 15px;
 }
 
 .tablet-menu-title-text {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   font-family: "Amatic SC", cursive;
   color: var(--main-color);
@@ -1094,11 +1094,12 @@
   display: flex;
   position: relative;
   align-items: center;
-  width: 30%;
-  height: 35px;
-  border-radius: 30px;
+  width: 60%;
+  height: 40px;
+  border-radius: 20px;
   border: 1px solid var(--main-color);
   margin: 10px 0;
+  margin-left: 20%;
 }
 
 .tablet-search-icon {
@@ -1132,22 +1133,22 @@
   outline: none;
 }
 
-.drawer {
+.tablet-drawer {
   margin-right: 5px;
-  font-size: 20px;
+  font-size: 30px;
   color: var(--main-color);
   cursor: pointer;
 }
 
-.drawer-list {
+.tablet-drawer-list {
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
 }
 
-.drawer-list li {
-  font-size: 15px;
+.tablet-drawer-list li {
+  font-size: 20px;
   font-weight: 600;
   font-family: "Helvetica", sans-serif;
   color: var(--main-color);
@@ -1155,7 +1156,7 @@
   text-transform: uppercase;
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 30px;
   cursor: pointer;
 }
 
@@ -1163,11 +1164,11 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 12.5px;
 }
 
 .tablet-nav-list li {
-  font-size: 13.5px;
+  font-size: 16.5px;
   font-weight: 600;
   font-family: "Helvetica", sans-serif;
   color: var(--main-color);
@@ -1217,7 +1218,7 @@
   }
 
   .home {
-    margin-top: 85px;
+    margin-top: 152px;
     height: 1500px;
     flex-direction: column;
   }

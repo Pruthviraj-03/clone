@@ -154,7 +154,7 @@ const Header = () => {
             <div className="tablet-menu-compo">
               <div className="tablet-menu-header">
                 <FontAwesomeIcon
-                  className="drawer"
+                  className="tablet-drawer"
                   icon={faBars}
                   onClick={toggleDrawer}
                 />
@@ -166,18 +166,6 @@ const Header = () => {
                 </span>
               </div>
 
-              <div className="tablet-search-bar">
-                <FontAwesomeIcon
-                  className="tablet-search-icon"
-                  icon={faSearch}
-                />
-                <input
-                  className="tablet-search-input"
-                  placeholder="SEARCH"
-                  type="text"
-                />
-              </div>
-
               <ul className="tablet-nav-list">
                 <li>login</li>
                 <li>help</li>
@@ -185,8 +173,17 @@ const Header = () => {
               </ul>
             </div>
 
+            <div className="tablet-search-bar">
+              <FontAwesomeIcon className="tablet-search-icon" icon={faSearch} />
+              <input
+                className="tablet-search-input"
+                placeholder="SEARCH"
+                type="text"
+              />
+            </div>
+
             {isDrawerOpen && (
-              <div className="drawer-list">
+              <div className="tablet-drawer-list">
                 <li onClick={toggleDrawer}>
                   <FontAwesomeIcon icon={faGift} />
                   new

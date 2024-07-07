@@ -1049,3 +1049,413 @@
   }
 }
 /* mobile responsive end */
+
+/* tablet header start */
+.tablet-menu {
+  background-color: #b5c0c7;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  opacity: 1;
+  z-index: 50;
+  gap: 10px;
+}
+
+.tablet-menu-compo {
+  background-color: #b5c0c7;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.tablet-menu-header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: auto;
+  gap: 10px;
+}
+
+.tablet-menu-title-text {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Amatic SC", cursive;
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.tablet-search-bar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 30%;
+  height: 35px;
+  border-radius: 30px;
+  border: 1px solid var(--main-color);
+  margin: 10px 0;
+}
+
+.tablet-search-icon {
+  font-size: 14px;
+  margin-left: 15px;
+  color: var(--main-color);
+}
+
+.tablet-search-input {
+  font-family: "Helvetica", sans-serif;
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 500;
+  width: 80%;
+  margin-left: 10px;
+  letter-spacing: 0.5px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.tablet-search-input input::placeholder {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Helvetica", sans-serif;
+  color: var(--main-color);
+}
+
+.tablet-search-input input:focus {
+  outline: none;
+}
+
+.drawer {
+  margin-right: 5px;
+  font-size: 20px;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.drawer-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.drawer-list li {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Helvetica", sans-serif;
+  color: var(--main-color);
+  list-style-type: none;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.tablet-nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.tablet-nav-list li {
+  font-size: 13.5px;
+  font-weight: 600;
+  font-family: "Helvetica", sans-serif;
+  color: var(--main-color);
+  list-style-type: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tablet-nav-list li:hover {
+  color: var(--dark-grey);
+}
+/* tablet header end */
+
+/* tablet responsive start */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 28px;
+  }
+
+  .product-card {
+    height: 500px;
+    width: 48%;
+  }
+
+  .product-data {
+    margin-top: 5px;
+  }
+
+  .save-icon {
+    margin-right: 5px;
+  }
+
+  .para {
+    font-size: 17px;
+  }
+
+  .button {
+    height: 45px;
+    width: 200px;
+  }
+
+  .button-text {
+    font-size: 15px;
+  }
+
+  .home {
+    margin-top: 85px;
+    height: 1500px;
+    flex-direction: column;
+  }
+
+  .home-one,
+  .home-two {
+    width: 100%;
+  }
+
+  .home-box {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    border: 3px solid var(--dark-white);
+    height: 60px;
+    width: 250px;
+  }
+
+  .home-box span {
+    font-size: 20px;
+  }
+
+  .home-navlist {
+    display: none;
+  }
+
+  .essentials {
+    margin: 40px 0;
+  }
+
+  .essentials-title span {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+
+  .essentials-line {
+    border-bottom: 3px solid var(--main-color);
+    width: 60%;
+  }
+
+  .essentials-para {
+    margin-top: 30px;
+    width: 85%;
+    height: auto;
+  }
+
+  .essentials-cards {
+    margin-top: 35px;
+  }
+
+  .essentials-button {
+    margin-top: 40px;
+  }
+
+  .arrivals {
+    margin-bottom: 40px;
+  }
+
+  .arrivals-img {
+    height: 530px;
+  }
+
+  .arrivals-title {
+    left: 27%;
+    font-size: 44px;
+    letter-spacing: 7px;
+  }
+
+  .arrivals-para {
+    top: 54%;
+    left: 12%;
+    width: 80%;
+    height: 15%;
+    overflow: hidden;
+  }
+
+  .arrivals-button {
+    top: 78%;
+    left: 40%;
+  }
+
+  .trial-img {
+    height: 530px;
+  }
+
+  .trial-title1 {
+    top: 30%;
+    left: 5%;
+    font-size: 32px;
+    letter-spacing: 5px;
+  }
+
+  .trial-title2 {
+    top: 39%;
+    font-size: 28px;
+    letter-spacing: 5px;
+  }
+
+  .trial-para {
+    top: 52%;
+    width: 50%;
+    height: 15%;
+    overflow: hidden;
+  }
+
+  .trial-button {
+    top: 75%;
+  }
+
+  .order {
+    margin-bottom: 40px;
+  }
+
+  .order-img {
+    height: 550px;
+  }
+
+  .order-title {
+    position: absolute;
+    top: 67%;
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+
+  .order-para {
+    top: 80%;
+    width: 80%;
+    height: 15%;
+    overflow: hidden;
+  }
+
+  .offers {
+    gap: 30px;
+    margin: 60px 0;
+  }
+
+  .offers-title,
+  .offers-para {
+    gap: 3px;
+  }
+
+  .offers-title1,
+  .offers-title2 {
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+
+  .offers-para1,
+  .offers-para2 {
+    font-size: 22.5px;
+  }
+
+  .subscribe-now {
+    align-items: center;
+    gap: 30px;
+  }
+
+  .subscibe-container {
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .subscibe-container input {
+    font-size: 15px;
+    height: 45px;
+    width: 500px;
+    border: 1px solid var(--main-color);
+  }
+
+  .subscibe-container input::placeholder {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  .privacy {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: var(--main-color);
+    letter-spacing: 0.5px;
+  }
+
+  .footer-container {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    margin: 40px 0 20px 0;
+    gap: 30px;
+  }
+
+  .footer-container-col1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 0px;
+  }
+
+  .footer-container-col1 span {
+    font-size: 22.5px;
+  }
+
+  .footer-container-col1 h3 {
+    font-size: 22.5px;
+  }
+
+  .footer-container-col2 {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 0%;
+  }
+
+  .footer-container-col2 span {
+    font-size: 25px;
+  }
+
+  .footer-container-col2 li {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .footer-social {
+    margin-bottom: 30px;
+    gap: 15px;
+    width: 90%;
+  }
+
+  .icon,
+  .footer-social h3 {
+    font-size: 30px;
+  }
+
+  .footer-social span {
+    font-size: 20.5px;
+  }
+}
+/* tablet responsive end */

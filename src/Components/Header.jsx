@@ -85,9 +85,9 @@ const Header = () => {
 
       {isMobile && (
         <>
-          <div class="mobile-menu">
-            <div class="menu-header">
-              <span class="menu-title-text" onClick={handleRefreshPage}>
+          <div className="mobile-menu">
+            <div className="menu-header">
+              <span className="menu-title-text" onClick={handleRefreshPage}>
                 house of origin
               </span>
               <FontAwesomeIcon
@@ -97,9 +97,13 @@ const Header = () => {
               />
             </div>
 
-            <div class="search-bar">
+            <div className="search-bar">
               <FontAwesomeIcon className="search-icon" icon={faSearch} />
-              <input class="search-input" placeholder="SEARCH" type="text" />
+              <input
+                className="search-input"
+                placeholder="SEARCH"
+                type="text"
+              />
             </div>
 
             {isDrawerOpen && (
@@ -117,25 +121,25 @@ const Header = () => {
             )}
           </div>
 
-          <div class="bottom-navigation">
-            <ul class="bottom-nav-list">
-              <li class="bottom-nav-item">
+          <div className="bottom-navigation">
+            <ul className="bottom-nav-list">
+              <li className="bottom-nav-item">
                 <FontAwesomeIcon icon={faGift} />
                 new
               </li>
-              <li class="bottom-nav-item">
+              <li className="bottom-nav-item">
                 <FontAwesomeIcon icon={faFemale} />
                 women
               </li>
-              <li class="bottom-nav-item">
+              <li className="bottom-nav-item">
                 <FontAwesomeIcon icon={faMale} />
                 men
               </li>
-              <li class="bottom-nav-item">
+              <li className="bottom-nav-item">
                 <FontAwesomeIcon icon={faHome} />
                 home
               </li>
-              <li class="bottom-nav-item">
+              <li className="bottom-nav-item">
                 <FontAwesomeIcon icon={faBoxOpen} />
                 sale
               </li>
@@ -146,29 +150,29 @@ const Header = () => {
 
       {isTablet && (
         <>
-          <div class="tablet-menu">
+          <div className="tablet-menu">
             <div className="tablet-menu-compo">
-              <div class="tablet-menu-header">
+              <div className="tablet-menu-header">
                 <FontAwesomeIcon
                   className="drawer"
                   icon={faBars}
                   onClick={toggleDrawer}
                 />
                 <span
-                  class="tablet-menu-title-text"
+                  className="tablet-menu-title-text"
                   onClick={handleRefreshPage}
                 >
                   house of origin
                 </span>
               </div>
 
-              <div class="tablet-search-bar">
+              <div className="tablet-search-bar">
                 <FontAwesomeIcon
                   className="tablet-search-icon"
                   icon={faSearch}
                 />
                 <input
-                  class="tablet-search-input"
+                  className="tablet-search-input"
                   placeholder="SEARCH"
                   type="text"
                 />

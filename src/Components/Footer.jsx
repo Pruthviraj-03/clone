@@ -28,7 +28,7 @@ const Footer = () => {
             <li>magazine</li>
           </ul>
         </div>
-        <div className="footer-container-col2">
+        <div className="footer-container-col3">
           <span>corporate info</span>
           <ul>
             <li>career</li>
@@ -38,11 +38,11 @@ const Footer = () => {
             <li>corporate governance</li>
           </ul>
         </div>
-        <div className="footer-container-col2">
+        <div className="footer-container-col4">
           <span>help</span>
           <ul>
             <li>customer service</li>
-            <li>legal and privacy</li>
+            <li>legal & privacy</li>
             <li>contact</li>
             <li>report a scam</li>
             <li>cookie notice</li>

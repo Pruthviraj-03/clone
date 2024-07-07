@@ -1,8 +1,8 @@
 import React from "react";
-import Product1 from "../Images/Product1.jpg";
-import Product2 from "../Images/Product2.jpg";
-import Product3 from "../Images/Product3.jpg";
-import Product4 from "../Images/Product4.jpg";
+import Product1 from "../assets/Images/Product1.jpg";
+import Product2 from "../assets/Images/Product2.jpg";
+import Product3 from "../assets/Images/Product3.jpg";
+import Product4 from "../assets/Images/Product4.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
